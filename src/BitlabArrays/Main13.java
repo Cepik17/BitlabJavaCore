@@ -1,0 +1,29 @@
+package BitlabArrays;
+/* #20
+Программа запрашивает число n. Далее, мы вводим n чисел и сохраняем все введенные числа в массив. Выведите в конце максимальный элемент и его индекс.
+Ввод:
+8
+-4 9 2 16 -5 8 7 -11
+Вывод:
+16 3*/
+import java.util.Scanner;
+
+public class Main13 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int size = in.nextInt();
+        int[] nums = new int[size];
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] = in.nextInt();
+        }
+        int max = nums[0];
+        int index = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] > max) {
+                max = nums[i];
+                index = i;
+            }
+        }System.out.print(max + " " + index);
+
+    }
+}
