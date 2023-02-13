@@ -20,5 +20,15 @@ public class TestMassiveSort {
         }
     }
 }
-
+  /*  //descending sort by salary
+    Staff staff_temp;
+        for (int i = 0; i < staff.length - 1; i++) {
+        for (int j = 0; j < staff.length - i - 1; j++) {
+        if (staff[j].getSalary() < staff[j + 1].getSalary()) {
+        staff_temp = staff[j];
+        staff[j] = staff[j + 1];
+        staff[j + 1] = staff_temp;
+        }
+        }
+        }*/
 
