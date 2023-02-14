@@ -1,5 +1,11 @@
 package BitlabGenerics;
-
+/*#1
+* Создайте специальный класс Printer.java (Printer<T>) у который принимает в качестве шаблона любой вид класса (дженерики). У класса Printer.java будет универсальный объект (T).
+Класс Printer.java имеет 4 метода:
+void setValue(T value) - назначает значение вашего объекта
+T getValue() - возвращает наш объект
+void printValue() - выводит на консоль ваш объект -> // System.out.println("Value is " + value);
+void refresh() - меняет данный объект на null, одним словом сбрасывает*/
 public class Printer<T> {
     private T value;
 

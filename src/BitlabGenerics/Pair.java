@@ -1,8 +1,13 @@
 package BitlabGenerics;
-
+/*#2
+* Создайте класс Pair<A, B>, который может хранить пару объектов.
+Создайте конструкторы с параметрами (Pair(A first, B second))
+Создайте методы A getFirst() и B getSecond() которые возвращают первые и вторые элементы соответственно
+Создайте методы void setA(A first) и void setB(B second) которые возвращают первые и вторые элементы соответственно*/
 public class Pair <A, B>{
     private A first;
     private B second;
+
 
     public Pair(A first, B second) {
         this.first=first;
